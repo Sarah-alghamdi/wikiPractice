@@ -1,0 +1,143 @@
+
+
+.search-etc{
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+    margin-bottom: 110px;
+}
+
+.search-etc img{
+    height: 200px;
+}
+
+
+
+.input-container {
+    width: 800px;
+    position: relative;
+    
+  }
+  
+  .label {
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    transition: all 0.2s;
+    padding: 0 2px;
+    z-index: 1;
+    color: #b3b3b3;
+  }
+  .text-input {
+    padding: 0.8rem;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #2f2c45;
+    background: #272530;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s;
+    color: #fff;
+  }
+  
+  .label::before {
+    content: "";
+    height: 5px;
+    background: #272530;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .text-input:focus {
+    border: 2px solid #7e4ccb;
+  }
+  
+  .text-input:focus + .label,
+  .filled {
+    top: -10px;
+    color: #7e4ccb;
+    font-size: 14px;
+  }
+  
+  .text-input::placeholder {
+    font-size: 16px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .text-input:focus::placeholder {
+    opacity: 1;
+  }
+
+
+
+/*body {
+    background: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3) no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 30rem;
+    height: 20rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    
+    backdrop-filter: blur(5px);
+  }*/
+
+
+ /* body {
+    background-color: #333;
+  }
+  a {
+     display: block;
+  }
+  img {
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    display: block;
+  }
+  .container {
+      margin-top: 40px;
+      max-width: 700px;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+  }
+  .filter {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate3d( 40%, 30%, 0 );
+      width: 60%;
+      height: 60%;
+      z-index: 30;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /**
+   * Extras 
+   
+  
+  .filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }*/
+
+
+
+  
