@@ -7,3 +7,7 @@ document.querySelectorAll(".text-input").forEach((element) => {
       }
     });
   });
+
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }

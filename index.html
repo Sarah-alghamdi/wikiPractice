@@ -19,12 +19,16 @@
         </video>
         <div class="container-fluid">
             <div class="navbar navbar-dark bg-dark">
-                <a href="#"> <i class="fa-thin fa-bars-sort"></i> Menu</a>
+                <div class="menue" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
                 <div class="navbar-brand">
-                    <button type="button" class="btn btn-primary">
-                        Notifications <span class="badge text-bg-secondary">4</span>
+                    <button type="button" class="btn btn-light">
+                        Notifications <span class="badge text-bg-danger">4</span>
                     </button>
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" class="btn btn-light">
                         loge out</button>
                 </div>
             </div>
@@ -52,16 +56,18 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseOne" aria-expanded="false"
                                     aria-controls="flush-collapseOne">
-                                    <h3>History</h3>
+                                    <h2>Contant</h2>
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is
-                                    intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the first item's
-                                    accordion
-                                    body.</div>
+                                <div class="accordion-body" id="accorbody">
+                                    <a href="#about">About MJ</a>
+                                    <br>
+                                    <a href="#lifeCareer">Life and career</a>
+                                    <br>
+                                    <a href="#Death">Death</a>
+                                </div>
                             </div>
                         </div>
                         <div class="accordion-item">
@@ -69,16 +75,22 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                     aria-controls="flush-collapseTwo">
-                                    <h3>Location</h3>
+                                    <h2>Tools</h2>
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is
-                                    intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the second item's
-                                    accordion
-                                    body. Let's imagine this being filled with some actual content.</div>
+                                <div class="accordion-body" id="accorbody">
+                                    <a href="#">What links here</a> 
+                                    <br>
+                                    <a href="#">Related changes</a>
+                                    <br>
+                                    <a href="#">Special pages</a>
+                                    <br>
+                                    <a href="#">Permanent link</a>
+                                    <br>
+                                    <a href="#">Cite this page</a>
+                                </div>
                             </div>
                         </div>
                         <div class="accordion-item">
@@ -86,112 +98,171 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseThree" aria-expanded="false"
                                     aria-controls="flush-collapseThree">
-                                    <h3>Resources</h3>
+                                    <h2>Resources</h2>
                                 </button>
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is
-                                    intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
-                                    accordion
-                                    body. Nothing more exciting happening here in terms of content, but just filling
-                                    up
-                                    the
-                                    space to make it look, at least at first glance, a bit more representative of
-                                    how
-                                    this would
-                                    look in a real-world application.</div>
+                                <div class="accordion-body" id="accorbody">
+                                    <a href="#">Bain, Raymone K. (October 31, 2006). "Statement from Raymone Bain to all fans and fanclubs". Mjtmc.com. Archived from the original on February 17, 2007</a>
+                                    <br>
+                                    <a href="#">Bialik, Carl (July 15, 2009). "Spun: The Off-the-Wall Accounting of Record Sales". The Wall Street Journal. Archived from the original on March 10, 2015. Retrieved December 17, 2021.</a>
+                                    <br>
+                                    <a href="#">"Michael Jackson's Partial Comeback Is No Thriller". Billboard. November 16, 2006. Retrieved December 17, 2021.</a>
+                                    <br>
+                                    <a href="#">"Factbox: The life and death of pop star Michael Jackson". Reuters (Press release). September 6, 2011. Retrieved December 17, 2021.</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="col-9">
+                <div class="col-10">
                     <div class="righttop">
-                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
-                            aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">art</li>
-                            </ol>
-                        </nav>
+                        <h1>Michael Jackson</h1>
                     </div>
-                    <div class="clearfix">
-                        <img src="..." class="col-md-6 float-md-fluid mb-3 ms-md-3" alt="...">
+                    <div class="clearfix" id="about">
                         <p>
-                            A paragraph of placeholder text. We're using it here to show the use of the clearfix
-                            class.
-                            We're adding quite a few meaningless phrases here to demonstrate how the columns
-                            interact
-                            here with the floated image.
+                            Michael Joseph Jackson (August 29, 1958 – June 25, 2009) was an American singer, songwriter,
+                            and dancer. Dubbed the "King of Pop", he is regarded as one of the most significant cultural
+                            figures of the 20th century. Over a four-decade career, his contributions to music, dance,
+                            and fashion, along with his publicized personal life, made him a global figure in popular
+                            culture. Jackson influenced artists across many music genres; through stage and video
+                            performances, he popularized complicated dance moves such as the moonwalk, to which he gave
+                            the name, as well as the robot. He is the most awarded individual music artist in history.
                         </p>
-                        <p>
-                            As you can see the paragraphs gracefully wrap around the floated image. Now imagine how
-                            this
-                            would look with some actual content in here, rather than just this boring placeholder
-                            text
-                            that goes on and on, but actually conveys no tangible information at. It simply takes up
-                            space and should not really be read.
-                        </p>
-                    </div>
-                    <div class="clearfix">
-                        <img src="..." class="col-md-3 float-md-end mb-3 ms-md-3" alt="...">
-                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
-                            data-bs-custom-class="custom-tooltip" title="This top tooltip is themed via CSS variables.">
-                            please work</a>
-                        <p>
-                            A paragraph of placeholder text. We're using it here to show the use of the clearfix
-                            class.
-                            We're adding quite a few meaningless phrases here to demonstrate how the columns
-                            interact
-                            here with the floated image.
-                        </p>
+                        <div class="clearfix" id="space">
+
+                            <img src="MK ver.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" id="longImage" alt="...">
+                            <p>
+                                The eighth child of the Jackson family, Jackson made his professional debut in 1964 with
+                                his elder brothers Jackie, Tito, Jermaine, and Marlon as a member of the Jackson 5
+                                (later known as the Jacksons). Jackson began his solo career in 1971 while at Motown
+                                Records. He became a solo star with his 1979 album Off the Wall. His music videos,
+                                including those for "Beat It", "Billie Jean", and "Thriller" from his 1982 album
+                                Thriller, are credited with breaking racial barriers and transforming the medium into an
+                                artform and promotional tool.
+                            </p>
+                            <p>
+                                He helped propel the success of MTV and continued to innovate with videos for the albums
+                                Bad (1987), Dangerous (1991), and HIStory: Past, Present and Future, Book I (1995).
+                                Thriller became the best-selling album of all time, while Bad was the first album to
+                                produce five U.S. Billboard Hot 100 number-one singles.
+                                From the late 1980s, Jackson became a figure of controversy and speculation due to his
+                                changing appearance, relationships, behavior, and lifestyle. In 1993, he was accused of
+                                sexually abusing the child of a family friend. The lawsuit was settled out of civil
+                                court; Jackson was not indicted due to lack of evidence. In 2005, he was tried and
+                                acquitted of further child sexual abuse allegations and several other charges. The FBI
+                                found no evidence of criminal conduct on Jackson's behalf in either case. In 2009, while
+                                preparing for a series of comeback concerts, This Is It, Jackson died from an overdose
+                                of propofol administered by his personal physician, Conrad Murray, who was convicted in
+                                2011 of involuntary manslaughter.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="clearfix" id="space">
+                            <h1 id="lifeCareer">Life and career</h1>
+                            <p>
+                                Michael Joseph Jackson[9][10] was born in Gary, Indiana, on August 29, 1958.[11][12] He
+                                was the eighth of ten children in the Jackson family, a working-class African-American
+                                family living in a two-bedroom house on Jackson Street.[13][14] His mother, Katherine
+                                Esther Jackson (née Scruse), played clarinet and piano, had aspired to be a
+                                country-and-western performer, and worked part-time at Sears.[15] She was a Jehovah's
+                                Witness.[16] His father, Joseph Walter "Joe" Jackson, a former boxer, was a crane
+                                operator at U.S. Steel and played guitar with a local rhythm and blues band, the
+                                Falcons, to supplement the family's income.[17][18] Joe's great-grandfather, July "Jack"
+                                Gale, was a US Army scout; family lore held that he was also a Native American medicine
+                                man.[19] Michael grew up with three sisters (Rebbie, La Toya, and Janet) and five
+                                brothers (Jackie, Tito, Jermaine, Marlon, and Randy).[17] A sixth brother, Marlon's twin
+                                Brandon, died shortly after birth.[20]
+                            </p>
+                            <div class="card float-md-end mb-3 ms-md-3" style="width: 18rem;">
+                                <img src="homemk.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Jackson's childhood home in Gary, Indiana, pictured in March
+                                        2010</p>
+                                </div>
+                            </div>
+
+
+                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                data-bs-custom-class="custom-tooltip"
+                                title="This top tooltip is themed via CSS variables.">
+                                please work</a>
+                            <p>
+                                In 1964, Michael and Marlon joined the Jackson Brothers—a band formed by their father
+                                which included Jackie, Tito, and Jermaine—as backup musicians playing congas and
+                                tambourine.[21][22] Michael said his father told him he had a "fat nose",[23] and
+                                physically and emotionally abused him during rehearsals. He recalled that Joe often sat
+                                in a chair with a belt in his hand as he and his siblings rehearsed, ready to punish any
+                                mistakes.[16][24] Joe acknowledged that he regularly whipped Michael.[25] Katherine said
+                                that although whipping came to be considered abuse, it was a common way to discipline
+                                children when Michael was growing up.[26][27] Jackie, Tito, Jermaine and Marlon denied
+                                that their father was abusive and said that the whippings, which were harder on Michael
+                                because he was younger, kept them disciplined and out of trouble.[28] Jackson said his
+                                youth was lonely and isolated.
+                            </p>
+                            <p>Later in 1964, Michael began sharing lead vocals with Jermaine, and the group's name was
+                                changed to the Jackson 5.[30] In 1965, the group won a talent show; Michael performed
+                                the dance to Robert Parker's 1965 song "Barefootin'" and sang the Temptations' "My
+                                Girl".[31] From 1966 to 1968, the Jacksons 5 toured the Midwest; they frequently played
+                                at a string of black clubs known as the Chitlin' Circuit as the opening act for artists
+                                such as Sam & Dave, the O'Jays, Gladys Knight, and Etta James. The Jackson 5 also
+                                performed at clubs and cocktail lounges, where striptease shows were featured, and at
+                                local auditoriums and high school dances.[32][33] In August 1967, while touring the East
+                                Coast, they won a weekly amateur night concert at the Apollo Theater in Harlem.</p>
+                        </div>
+                        <div class="clearfix" id="space">
+                            <h1>Death</h1>
+                            <p id="Death" >
+                                On June 25, 2009, less than three weeks before the first This Is It show was due to begin in London, with all concerts sold out, Jackson died from cardiac arrest, caused by a propofol and benzodiazepine overdose.[294][295] Conrad Murray, his personal physician, had given Jackson various medications to help him sleep at his rented mansion in Holmby Hills, Los Angeles. Paramedics received a 911 call at 12:22 pm Pacific time (19:22 UTC) and arrived three minutes later.[296][297] Jackson was not breathing and CPR was performed.[298] Resuscitation efforts continued en route to Ronald Reagan UCLA Medical Center, and for more than an hour after Jackson's arrival there, but were unsuccessful,[299][300] and Jackson was pronounced dead at 2:26 pm Pacific time (21:26 UTC).[301][302]
+
+Jackson was administered propofol, lorazepam, and midazolam;[303] his death was caused by a propofol overdose.[295][300] News of his death spread quickly online, causing websites to slow down and crash from user overload,[304] and putting unprecedented strain[305] on services and websites including Google,[306] AOL Instant Messenger,[305] Twitter, and Wikipedia.[306] Overall, web traffic rose by between 11% and 20%.[307][308] MTV and BET aired marathons of Jackson's music videos,[309] and Jackson specials aired on television stations around the world.[310] MTV briefly returned to its original music video format,[11] and aired hours of Jackson's music videos, with live news specials featuring reactions from MTV personalities and other celebrities.
+                            </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+<br>
 
 
-    <div></div>
-
-<div class="footer-dark">
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
-                        </ul>
+        <div class="footer-dark">
+            <footer>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">About Wikimedia</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Statistics</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>More</h3>
+                            <ul>
+                                <li><a href="#">Devalopers</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Mobile view</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-md-3 item text">
+                            <h3>Wikipedia</h3>
+                            <p>Text is available under the Creative Commons Attribution-ShareAlike License 3.0; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization..</p>
+                        </div>
                     </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>Company Name</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-                    </div>
+                    <p class="copyright">wikipedia © 2022</p>
                 </div>
-                <p class="copyright">wikipedia © 2022</p>
-            </div>
-        </footer>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
 
 </body>
 

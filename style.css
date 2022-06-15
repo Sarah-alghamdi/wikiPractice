@@ -1,5 +1,29 @@
 
+.menue {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 10px;
+}
 
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
 .search-etc{
     display: grid;
     place-items: center;
@@ -53,13 +77,13 @@
   }
   
   .text-input:focus {
-    border: 2px solid #101875;
+    border: 2px solid #ffffff;
   }
   
   .text-input:focus + .label,
   .filled {
     top: -10px;
-    color: #101875;
+    color: #ffffff;
     font-size: 14px;
   }
   
@@ -92,6 +116,24 @@
     position: relative;
   }
 
+  .righttop h1{
+    margin-bottom: 50px;
+    font-size: 60px;
+  }
+
+  #longImage{
+    width: 20%;
+    margin-top: 20px;
+  }
+
+  #space{
+    margin-top: 50px;
+  }
+
+  #accorbody a{
+font-size: smaller;
+text-decoration:none;
+  }
 
 
   .footer-dark {
