@@ -11,3 +11,7 @@ document.querySelectorAll(".text-input").forEach((element) => {
   function myFunction(x) {
     x.classList.toggle("change");
   }
+
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
